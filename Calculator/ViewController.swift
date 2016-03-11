@@ -5,7 +5,6 @@
 //  Created by Xhriman on 2016/3/3.
 //  Copyright © 2016年 Exwd. All rights reserved.
 //
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -19,7 +18,4 @@ class ViewController: UIViewController {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
-
-
 }
-

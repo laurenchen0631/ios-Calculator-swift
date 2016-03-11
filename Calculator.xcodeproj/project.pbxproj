@@ -10,7 +10,6 @@
 		341A10F81C88251D00513B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341A10F71C88251D00513B42 /* AppDelegate.swift */; };
 		341A10FA1C88251D00513B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341A10F91C88251D00513B42 /* ViewController.swift */; };
 		341A10FD1C88251D00513B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341A10FB1C88251D00513B42 /* Main.storyboard */; };
-		341A11001C88251D00513B42 /* Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 341A10FE1C88251D00513B42 /* Calculator.xcdatamodeld */; };
 		341A11021C88251D00513B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341A11011C88251D00513B42 /* Assets.xcassets */; };
 		341A11051C88251D00513B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341A11031C88251D00513B42 /* LaunchScreen.storyboard */; };
 		341A11101C88251D00513B42 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341A110F1C88251D00513B42 /* CalculatorTests.swift */; };
@@ -40,7 +39,6 @@
 		341A10F71C88251D00513B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		341A10F91C88251D00513B42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		341A10FC1C88251D00513B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		341A10FF1C88251D00513B42 /* Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calculator.xcdatamodel; sourceTree = "<group>"; };
 		341A11011C88251D00513B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		341A11041C88251D00513B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		341A11061C88251D00513B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				341A11011C88251D00513B42 /* Assets.xcassets */,
 				341A11031C88251D00513B42 /* LaunchScreen.storyboard */,
 				341A11061C88251D00513B42 /* Info.plist */,
-				341A10FE1C88251D00513B42 /* Calculator.xcdatamodeld */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -265,7 +262,6 @@
 			files = (
 				341A10FA1C88251D00513B42 /* ViewController.swift in Sources */,
 				341A10F81C88251D00513B42 /* AppDelegate.swift in Sources */,
-				341A11001C88251D00513B42 /* Calculator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,19 +509,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		341A10FE1C88251D00513B42 /* Calculator.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				341A10FF1C88251D00513B42 /* Calculator.xcdatamodel */,
-			);
-			currentVersion = 341A10FF1C88251D00513B42 /* Calculator.xcdatamodel */;
-			path = Calculator.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 341A10EC1C88251D00513B42 /* Project object */;
 }
