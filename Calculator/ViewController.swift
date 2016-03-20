@@ -52,9 +52,7 @@ class ViewController: UIViewController {
 		if tmpNumber != nil {
 			calculate(tmpOperator!, newValue: numberLabel.value)
 			tmpNumber = numberLabel.value
-//			isAnswerDisplayed = true
 		} else {
-//			tmpOperator = newOperator
 			tmpNumber = numberLabel.value
 			numberLabel.clear()
 		}
@@ -99,7 +97,7 @@ class ViewController: UIViewController {
 		default:
 			answer = newValue
 		}
-		print(answer)
+
 		if let value = answer {
 			numberLabel.value = value
 			isAnswerDisplayed = true
