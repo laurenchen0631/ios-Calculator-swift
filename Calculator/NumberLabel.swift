@@ -11,6 +11,8 @@ import Foundation
 
 class NumberLabel: UILabel {
 
+	let formatter = NSNumberFormatter()
+
 	// MARK: - Value
 
 	var value: Double {
@@ -23,15 +25,15 @@ class NumberLabel: UILabel {
 		}
 
 		set {
-			let formatter = NSNumberFormatter()
-			formatter.numberStyle = .DecimalStyle
-			formatter.maximumFractionDigits = 8
-
 			if newValue % 1 == 0 {
+				formatter.numberStyle = .DecimalStyle
+				formatter.maximumFractionDigits = 0
 				self.text = formatter.stringFromNumber(Int(newValue))
 			} else if (newValue < 1000) {
 				self.text = "\(Double(newValue))"
 			} else {
+				formatter.numberStyle = .DecimalStyle
+				formatter.maximumFractionDigits = 8
 				self.text = formatter.stringFromNumber(Double(newValue))
 			}
 		}

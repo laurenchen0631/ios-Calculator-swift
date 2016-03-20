@@ -10,6 +10,9 @@ import UIKit
 class ViewController: UIViewController {
 
 	@IBOutlet weak var numberLabel: NumberLabel!
+	var tmpNumber: Double?
+	var tmpOperator: String?
+	var isAnswerDisplayed: Bool = false
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -22,6 +25,10 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func numericButtonClicked(sender: AnyObject) {
+		if isAnswerDisplayed {
+			isAnswerDisplayed = false
+			numberLabel.clear()
+		}
 		if (sender.tag < 10) {
 			numberLabel.append(sender.tag)
 		} else {
@@ -30,20 +37,35 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func operatorButtonClicked(sender: AnyObject) {
+		var newOperator: String!
 		switch sender.tag {
 		case 1:
-			print("+")
+			newOperator = "+"
 		case 2:
-			print("-")
+			newOperator = "-"
 		case 3:
-			print("x")
+			newOperator = "*"
 		default:
-			print("/")
+			newOperator = "/"
 		}
+
+		if tmpNumber != nil {
+			calculate(tmpOperator!, newValue: numberLabel.value)
+			tmpNumber = numberLabel.value
+//			isAnswerDisplayed = true
+		} else {
+//			tmpOperator = newOperator
+			tmpNumber = numberLabel.value
+			numberLabel.clear()
+		}
+		tmpOperator = newOperator
 	}
 
 	@IBAction func clear(sender: AnyObject) {
 		numberLabel.clear()
+		tmpNumber = nil
+		tmpOperator = nil
+		isAnswerDisplayed = false
 	}
 
 	@IBAction func changeSign(sender: AnyObject) {
@@ -55,6 +77,35 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func calculate(sender: AnyObject) {
-		print(numberLabel.value)
+		if tmpOperator == nil {
+			return
+		}
+
+		calculate(tmpOperator!, newValue: numberLabel.value)
+		tmpOperator = nil
+	}
+
+	func calculate(operand: String, newValue: Double) {
+		var answer: Double!
+		switch operand {
+		case "+":
+			answer = (tmpNumber ?? 0) + newValue
+		case "-":
+			answer = (tmpNumber ?? 0) - newValue
+		case "*":
+			answer = (tmpNumber ?? 0) * newValue
+		case "/":
+			answer = (tmpNumber ?? 0) / newValue
+		default:
+			answer = newValue
+		}
+		print(answer)
+		if let value = answer {
+			numberLabel.value = value
+			isAnswerDisplayed = true
+		} else {
+			numberLabel.text = "錯誤"
+		}
+		tmpNumber = nil
 	}
 }
