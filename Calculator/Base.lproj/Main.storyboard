@@ -45,8 +45,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hN3-Ii-0T8" secondAttribute="height" multiplier="9:8" id="oxp-fU-jSZ"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" image="Sign">
+                                                <state key="normal" title="+/-">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -198,7 +199,7 @@
                                                 <color key="backgroundColor" red="0.95294117649999999" green="0.49803921569999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                                <state key="normal" title="−">
+                                                <state key="normal" title="-">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="focused">
@@ -380,7 +381,4 @@
             <point key="canvasLocation" x="439.5" y="417.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Sign" width="32" height="24"/>
-    </resources>
 </document>
