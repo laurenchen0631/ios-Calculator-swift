@@ -37,6 +37,7 @@ class NumberLabel: UILabel {
 //				formatter.maximumFractionDigits = 8
 //				self.text = formatter.stringFromNumber(Double(newValue))
 				self.text = "\(Double(newValue))"
+                
 			}
 		}
 	}
