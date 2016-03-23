@@ -26,15 +26,17 @@ class NumberLabel: UILabel {
 
 		set {
 			if newValue % 1 == 0 {
-				formatter.numberStyle = .DecimalStyle
-				formatter.maximumFractionDigits = 0
-				self.text = formatter.stringFromNumber(Int(newValue))
+//				formatter.numberStyle = .DecimalStyle
+//				formatter.maximumFractionDigits = 0
+//				self.text = formatter.stringFromNumber(Int(newValue))
+				self.text = "\(Int(newValue))"
 			} else if (newValue < 1000) {
 				self.text = "\(Double(newValue))"
 			} else {
-				formatter.numberStyle = .DecimalStyle
-				formatter.maximumFractionDigits = 8
-				self.text = formatter.stringFromNumber(Double(newValue))
+//				formatter.numberStyle = .DecimalStyle
+//				formatter.maximumFractionDigits = 8
+//				self.text = formatter.stringFromNumber(Double(newValue))
+				self.text = "\(Double(newValue))"
 			}
 		}
 	}
