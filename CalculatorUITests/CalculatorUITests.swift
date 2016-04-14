@@ -42,13 +42,6 @@ class CalculatorUITests: XCTestCase {
 		XCTAssertTrue(app.staticTexts["12359"].exists)
 	}
     
-    func testTest() {
-        
-        let app = XCUIApplication()
-        app.buttons["÷"].tap()
-        app.buttons["×"].tap()
-        
-    }
 	
 	func testAdd() {
 		let app = XCUIApplication()

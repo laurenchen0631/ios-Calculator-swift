@@ -39,15 +39,15 @@
                                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfA-Kl-pE7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN3-Ii-0T8" userLabel="+/-">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN3-Ii-0T8" userLabel="+/-">
                                                 <rect key="frame" x="90" y="0.0" width="90" height="80"/>
                                                 <color key="backgroundColor" red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hN3-Ii-0T8" secondAttribute="height" multiplier="9:8" id="oxp-fU-jSZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="+/-">
+                                                <state key="normal" title="+/-" image="Sign">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -381,4 +381,7 @@
             <point key="canvasLocation" x="439.5" y="417.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sign" width="32" height="24"/>
+    </resources>
 </document>
